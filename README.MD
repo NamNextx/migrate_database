@@ -7,4 +7,4 @@
 
 
 * Start docker compose: `docker-compse up -d`
-* Down docker compose: 'docker-compose down'
+* Down docker compose: `docker-compose down`
