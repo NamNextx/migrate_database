@@ -2,7 +2,6 @@ package com.nextx.springbatch.config;
 
 import com.nextx.springbatch.model.Order;
 import com.nextx.springbatch.repository.OrderRepository;
-import lombok.AllArgsConstructor;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
