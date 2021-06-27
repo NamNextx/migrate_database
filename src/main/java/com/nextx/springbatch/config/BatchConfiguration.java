@@ -21,10 +21,10 @@ import org.springframework.core.io.ClassPathResource;
 
 @Configuration
 @EnableBatchProcessing
-
 public class BatchConfiguration {
     @Autowired
     private JobBuilderFactory jobBuilderFactory;
+
     @Autowired
     private StepBuilderFactory stepBuilderFactory;
 
@@ -48,7 +48,6 @@ public class BatchConfiguration {
     @Bean
     public ItemProcessor<Order, Order> processor() {
         return new ItemProcessor<Order, Order>() {
-
             @Override
             public Order process(final Order order) throws Exception {
                 return order;
