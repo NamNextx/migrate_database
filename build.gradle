@@ -20,8 +20,11 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-batch'
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	implementation 'org.springframework.boot:spring-boot-starter-json'
 	compile("mysql:mysql-connector-java")
+	runtime('org.postgresql:postgresql')
 	compileOnly 'org.projectlombok:lombok'
 
 	annotationProcessor 'org.projectlombok:lombok'
